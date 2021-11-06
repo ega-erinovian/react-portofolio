@@ -1,0 +1,321 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap");
+@font-face {
+  font-family: "Butler";
+  src: url("./img/ButlerStencil-ExtraBold.woff2");
+}
+
+/* General Item */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Butler";
+  letter-spacing: -4px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 4vh;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #222; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0d6efd; /* color of the scroll thumb */
+  border-radius: 2rem; /* roundness of the scroll thumb */
+  border: none; /* creates padding around scroll thumb */
+}
+
+/* APP */
+.app-cl {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(./img/bg-2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+  font-size: 1.8vh;
+  font-weight: 500;
+}
+
+.navbar .navbar-brand {
+  font-size: 4vh;
+  font-weight: 700;
+}
+
+.navbar .navbar-brand:hover {
+  color: #00a3ff !important;
+}
+
+.navbar .btn {
+  font-weight: 800 !important;
+  transition: all ease 0.2s;
+}
+
+.navbar .btn:hover {
+  letter-spacing: 2px;
+}
+
+/* Home */
+.home {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home h1 {
+  font-size: 8.5rem;
+  letter-spacing: -0.4rem;
+  line-height: 14vh;
+}
+
+.home .row {
+  height: 90vh;
+}
+
+.home .potrait {
+  position: absolute;
+  top: 0;
+  right: 10vw;
+  width: 80vh;
+  filter: grayscale(1);
+  transition: all ease 0.25s;
+}
+
+.home .potrait:hover {
+  filter: grayscale(0);
+}
+
+.home .btn-contact .link {
+  transition: all ease 0.1s;
+}
+
+.home .btn-contact .link:hover {
+  cursor: pointer;
+  color: #0d6efd;
+}
+
+/* About */
+.about-page {
+  position: relative;
+  min-height: 100%;
+}
+
+.about-page .container .row .col img {
+  filter: grayscale(1);
+  transition: all ease 0.2s;
+}
+
+.about-page .handsign {
+  width: 25vh;
+}
+
+.about-page .container .row .col img:hover {
+  filter: grayscale(0);
+}
+
+.about-page p {
+  text-align: justify;
+  font-weight: 100;
+  font-size: 2.5vh;
+}
+
+.about-page .handsign:hover {
+  transform: scale(1.15);
+}
+
+/* Experience */
+.exp-page h1 {
+  font-size: 5rem;
+}
+
+.exp-page .exp-card h2 {
+  font-size: 150%;
+}
+.exp-page .exp-card h4 {
+  letter-spacing: 3px;
+}
+
+.exp-page .exp-card {
+  background-color: rgba(24, 24, 24, 0.555);
+}
+.exp-page .exp-card .inner {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.exp-page .container .row .exp-card .inner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  box-sizing: border-box;
+  height: 0;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.exp-page .container .row .exp-card .inner::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  box-sizing: border-box;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.exp-page .container .row .exp-card:hover .inner::after,
+.exp-page .container .row .exp-card:hover .inner::before {
+  border-color: #0d6efd;
+  width: 100%;
+  height: 100%;
+}
+
+/* Work */
+.work-page h1 {
+  font-size: 5rem;
+}
+
+.work-page .lightbox img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.work-page .lightbox .box {
+  height: 250px;
+}
+
+.work-page .lightbox .wide {
+  height: 250px;
+}
+
+/* Contact */
+.contact-page h1 {
+  font-size: 5rem;
+}
+
+/* Responsive */
+/* Tablet */
+@media screen and (max-width: 1000px) {
+  /* Home */
+  .home .title-container {
+    position: relative;
+    z-index: 10;
+  }
+  .home h1 {
+    font-size: 9.5vh;
+    letter-spacing: -0.2rem;
+    line-height: 10vh;
+  }
+
+  .home p {
+    width: 100vw;
+    font-size: 3vh;
+  }
+
+  .home .btn-contact {
+    font-size: 3rem;
+  }
+
+  .home .potrait {
+    filter: brightness(40%) grayscale(1);
+    right: -5vh;
+    z-index: 1;
+  }
+
+  .home .potrait:hover {
+    filter: none;
+  }
+  /* About */
+  .about-page {
+    height: fit-content;
+    overflow: hidden;
+  }
+  .about-page .potrait {
+    object-fit: cover;
+    height: 7rem;
+  }
+
+  .about-page p {
+    font-size: 1.5rem;
+  }
+
+  /* Experience */
+  .exp-page h1,
+  .work-page h1 {
+    font-size: 10vw;
+  }
+
+  /* work */
+  .work-page .lightbox .pict {
+    height: 50vh;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+  /* Home */
+  .home .btn-contact {
+    display: flex;
+    font-size: 2rem;
+  }
+  .home .potrait {
+    right: -15vh;
+  }
+  /* About */
+  .exp-page h1,
+  .work-page h1,
+  .contact-page h1 {
+    font-size: 14vw;
+  }
+  .about-page p {
+    padding: 0 0.7rem;
+    font-size: 1rem;
+  }
+  /* Work */
+  .work-page .subtitle {
+    font-size: 2vw !important;
+  }
+}
