@@ -1,26 +1,26 @@
 import React from "react";
-import Potrait from "./img/BG-1-col.png";
+import Potrait from "../assets/img/BG-1-col.png";
 import Typewriter from "typewriter-effect";
 import { Instagram, Linkedin, Github, Globe2 } from "react-bootstrap-icons";
 import Fade from "react-reveal/Fade";
+import "boxicons";
 
 const Home = () => {
   return (
     <>
-      <section id="home" className="home">
-        <div className="container text-light">
+      <section id="home" className="home mb-5">
+        <div className="container h-100">
           <Fade right>
             <img src={Potrait} className="potrait" alt="Ega Putra" />
           </Fade>
-          <div className="row align-items-center title-container">
-            <div className="col-5">
-              <Fade left>
-                <p className="text-primary">Hello, I am</p>
+          <div className="row align-items-center title-container" style={{ height: '100vh' }}>
+            <div className="col-lg-6">
+              <Fade left cascade>
                 <h1 className="title">Ega Erinovian</h1>
-                <p className="text-primary">
+                <p className="text-primary fs-4 d-flex"><strong className="me-2">I'm </strong> 
                   <Typewriter
                     options={{
-                      strings: ["Computer Science Student", "Full-Stack Developer", "Web Designer"],
+                      strings: ["Computer Science Student", "Full-Stack Web Developer", "Web Designer"],
                       autoStart: true,
                       loop: true,
                       delay: "75",

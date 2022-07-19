@@ -1,18 +1,25 @@
 import React from "react";
-import Home from "./Home";
-import About from "./About";
-import Exp from "./Exp";
-import Work from "./Work";
-import Contact from "./Contact";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ChangePage from "./ChangePage";
+import Home from "./components/Home";
+import About from "./components/About";
+import Exp from "./components/Exp";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navigasi from "./components/Navigasi";
+import Footer from "./components/Footer";
+import Skill from "./components/Skill";
 
 const app = () => {
   return (
     <>
-      <Router>
         <section className="app-cl" id="app">
-          <ChangePage />
+          <Navigasi />
+          <Home />
+          <About />
+          <Portfolio />
+          <Contact />
+          <Footer />
+        {/* <Router>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
@@ -20,8 +27,8 @@ const app = () => {
             <Route path="/work" exact component={Work} />
             <Route path="/contact" exact component={Contact} />
           </Switch>
+        </Router> */}
         </section>
-      </Router>
     </>
   );
 };
