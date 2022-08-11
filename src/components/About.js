@@ -25,20 +25,21 @@ const About = () => {
                 <div class="row">
                   <div class="col-lg-6">
                     <ul>
-                      <li className='mb-4'><strong>Age:</strong> <span>30</span></li>
-                      <li className='mb-4'><strong>Phone:</strong> <span>+123 456 7890</span></li>
-                      <li className='mb-4'><strong>City:</strong> <span>New York, USA</span></li>
+                      <li className='mb-4'><strong>Birth Date:</strong> <span>3 November 2000</span></li>
+                      <li className='mb-4'><strong>Phone:</strong> <span>+62 851 5511 4016</span></li>
+                      <li className='mb-4'><strong>City:</strong> <span>Sleman, D.I. Yogyakarta, Indonesia</span></li>
                     </ul>
                   </div>
                   <div class="col-lg-6">
                     <ul>
-                      <li className='mb-4'><strong>Degree:</strong> <span>Master</span></li>
-                      <li className='mb-4'><strong>PhEmailone:</strong> <span>email@example.com</span></li>
+                      <li className='mb-4'><strong>Degree:</strong> <span>Bachelor of Informatics</span></li>
+                      <li className='mb-4'><strong>Email:</strong> <span>erinovian69@gmail.com</span></li>
                       <li className='mb-4'><strong>Freelance:</strong> <span>Available</span></li>
                     </ul>
                   </div>
                 </div>
-                <p className="fs-6">Here are some technologies that i use the most.</p>
+                <h3><strong>Tech Stack</strong></h3>
+                <p className="fs-6">Here are some technologies that i use the most</p>
                 <Skill />
               </div>
             </Fade>

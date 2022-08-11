@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 const Contact = () => {
   return (
     <>
-      <section id="contact" className="contact-page py-5 mb-5">
+      <section id="contact" className="contact-page py-5">
         <div className="container">
           <Fade right cascade>
             <h1 className="text-center mb-3">Contact Me</h1>
@@ -21,7 +21,7 @@ const Contact = () => {
                   </div>
                   <div className="col ms-2">
                     <h4>Location</h4>
-                    <p className="fs-6 m-0">A108 Adam Street, New York, NY 535022</p>
+                    <p className="fs-6 m-0">Sidoarum, Godean, Sleman, D.I. Yogyakarta</p>
                   </div>
                 </div>
                 <div className="row align-items-center mb-4 gap-4">
@@ -32,7 +32,7 @@ const Contact = () => {
                   </div>
                   <div className="col ms-2">
                     <h4>Email</h4>
-                    <p className="fs-6 m-0">info@example.com</p>
+                    <p className="fs-6 m-0">erinovian69@gmail.com</p>
                   </div>
                 </div>
                 <div className="row align-items-center mb-4 gap-4">
@@ -43,7 +43,7 @@ const Contact = () => {
                   </div>
                   <div className="col ms-2">
                     <h4>Call</h4>
-                    <p className="fs-6 m-0">+1 5589 55488 55s</p>
+                    <p className="fs-6 m-0">+62 851 5511 4016</p>
                   </div>
                 </div>
               </Fade>

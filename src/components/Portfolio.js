@@ -35,32 +35,32 @@ const Portfolio = () => {
                   </a>
                 </div>
                 <div className="portfolio-card col-lg-3 col-md-6 text-center mb-5">
-                  <a href="https://golds-fitness.netlify.app">
+                  <a href="https://bookmarkco.netlify.app">
                       <img src={BookmarkLogo} alt="bookmark" />
                   </a>
                 </div>
                 <div className="portfolio-card col-lg-3 col-md-6 text-center mb-5">
-                  <a href="https://golds-fitness.netlify.app">
+                  <a href="https://sova-lineup.netlify.app">
                       <img src={SovaLogo} alt="sova-lineup" />
                   </a>
                 </div>
                 <div className="portfolio-card col-lg-3 col-md-6 text-center mb-5">
-                  <a href="https://golds-fitness.netlify.app">
+                  <a href="https://valoagent.netlify.app">
                       <img src={ValoLogo} alt="valo-agent" />
                   </a>
                 </div>
                 <div className="portfolio-card col-lg-3 col-md-6 text-center mb-5">
-                  <a href="https://golds-fitness.netlify.app">
+                  <a href="https://zikr-app.netlify.app">
                       <img src={ZikrLogo} alt="zikr" />
                   </a>
                 </div>
                 <div className="portfolio-card col-lg-3 col-md-6 text-center mb-5">
-                  <a href="https://golds-fitness.netlify.app">
+                  <a href="https://snkrz.netlify.app">
                       <img src={SNKRZLogo} alt="SNKRZ" />
                   </a>
                 </div>
                 <div className="portfolio-card col-lg-3 col-md-6 text-center mb-5">
-                  <a href="https://golds-fitness.netlify.app">
+                  <a href="http://sismakar-kprumahweb.my.id/">
                       <img src={RumahwebLogo} alt="rumahweb"/>
                   </a>
                 </div>

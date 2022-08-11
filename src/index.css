@@ -9,6 +9,7 @@
   --primary-blue: #0d6efd;
   --dark-primary-blue: #0c5dd6;
   --light-grey: #e6e9ec;
+  --grey: rgb(245, 245, 245);
   --dark-grey: #45505b;
 }
 
@@ -220,10 +221,14 @@ body::-webkit-scrollbar-thumb {
   width: 75vh;
   filter: grayscale(1);
   transition: all ease 0.25s;
+  padding-top: 10rem;
+  overflow: hidden;
+  -webkit-filter: grayscale(1);
 }
 
 .home .potrait:hover {
   filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 
 .home .btn-contact{
@@ -245,11 +250,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Skill */
-.skill-section{
-  min-width: 100%;
-  /* background-image: url(./assets/img/bg-wave-dark.png); */
-  /* background-color: var(--light-grey); */
-}
 .skill-section img{
   height: 100px;
   width: auto;
@@ -258,8 +258,6 @@ body::-webkit-scrollbar-thumb {
   -moz-transition: all .25s;
   -ms-transition: all .25s;
   -o-transition: all .25s;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
 }
 
 .skill-section img:hover{
@@ -268,17 +266,21 @@ body::-webkit-scrollbar-thumb {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
+}
+
+.skill-grid{
+  display: flex;
+  justify-content: space-between;
 }
 
 /* About */
 .about-page {
   position: relative;
   min-height: 100%;
+  background-color: var(--grey);
 }
 
-.about-page h1 {
+.about-page h1{
   font-size: 5rem;
 }
 
@@ -336,13 +338,13 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
 }
 
-/* Work */
+/* Portfolio */
 .portfolio-page h1 {
   font-size: 5rem;
 }
 
 .portfolio-page .portfolio-card img{
-  width: 300px;
+  width: 70%;
   object-fit: cover;
   filter: grayscale(1) opacity(.5);
   -webkit-filter: grayscale(1) opacity(.5);
@@ -363,6 +365,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Contact */
+.contact-page{
+  background-color: var(--grey);
+}
+
 .contact-page h1 {
   font-size: 5rem;
 }
@@ -394,11 +400,23 @@ body::-webkit-scrollbar-thumb {
 
 /* Footer */
 .footer-section{
-  background-color: var(--light-grey);
+  background-color: var(--dark-grey);
+}
+
+.footer-section h1{
+  color: #fff;
+}
+
+.footer-section p{
+  color: #fff;
+}
+
+.footer-section strong{
+  color: #fff;
 }
 
 .footer-section a{
-  color: var(--dark-grey);
+  color: #fff;
   transition: all ease-in .1s;
   -webkit-transition: all ease-in .1s;
   -moz-transition: all ease-in .1s;

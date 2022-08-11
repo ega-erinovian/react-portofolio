@@ -9,7 +9,6 @@ const Footer = () => {
             <div className="text-center d-flex flex-column">
               <Fade left cascade>
                 <h1 className="mb-3">Ega Erinovian</h1>
-                <p className="fs-6 mb-5">Here are some of my work since the first time i learn web development.</p>
                 <div className="footer-icon d-flex justify-content-center mb-5">
                   <Fade left cascade>
                     <a className="me-3" href="https://www.instagram.com/egaerinovian/" target="_blank" rel="noreferrer">

@@ -15,23 +15,23 @@ const Skill = () => {
         <section id="skill" className="skill-section">
             <div className="container">
                 <Fade right cascade>
-                    <div className="row align-items-center justify-content-start">
-                        <div className="col-lg-2 col-md-4 col-sm-3 text-center">
+                    <div className="skill-grid">
+                        <div className="text-center">
                             <img src={HTML} alt='HTML'/>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-sm-3 text-center">
+                        <div className="text-center">
                             <img src={CSS} alt='CSS'/>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-sm-6 text-center">
+                        <div className="text-center">
                             <img src={JavaScript_Icon} alt='Javascript'/>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-sm-6 text-center">
+                        <div className="text-center">
                             <img src={ReactJS_Icon} alt='ReactJS'/>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-sm-6 text-center">
+                        <div className="text-center">
                             <img src={PHP_Icon} alt='PHP'/>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-sm-6 text-center">
+                        <div className="text-center">
                             <img src={Python_Icon} alt='Python'/>
                         </div>
                     </div>

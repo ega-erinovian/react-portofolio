@@ -8,7 +8,7 @@ import "boxicons";
 const Home = () => {
   return (
     <>
-      <section id="home" className="home mb-5">
+      <section id="home" className="home">
         <div className="container h-100">
           <Fade right>
             <img src={Potrait} className="potrait" alt="Ega Putra" />
@@ -16,7 +16,7 @@ const Home = () => {
           <div className="row align-items-center title-container" style={{ height: '100vh' }}>
             <div className="col-lg-6">
               <Fade left cascade>
-                <h1 className="title">Ega Erinovian</h1>
+                <h1>Ega Erinovian</h1>
                 <p className="text-primary fs-4 d-flex"><strong className="me-2">I'm </strong> 
                   <Typewriter
                     options={{
