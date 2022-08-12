@@ -8,7 +8,7 @@ import Skill from "./Skill";
 const About = () => {
   return (
     <>
-      <section id="about" className="about-page py-5 mb-5">
+      <section id="about" className="about-page py-5">
         <div className="container h-100">
           <Fade right cascade>
             <h1 className="text-center mb-3">About</h1>
@@ -37,10 +37,8 @@ const About = () => {
                       <li className='mb-4'><strong>Freelance:</strong> <span>Available</span></li>
                     </ul>
                   </div>
+                  <p className="fs-6">Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
                 </div>
-                <h3><strong>Tech Stack</strong></h3>
-                <p className="fs-6">Here are some technologies that i use the most</p>
-                <Skill />
               </div>
             </Fade>
           </div>

@@ -12,27 +12,35 @@ import Python_Icon from "../assets/img/skills/python_icon_col.png";
 const Skill = () => {
   return (
     <>
-        <section id="skill" className="skill-section">
-            <div className="container">
+        <section id="skill" className="skill-section py-5">
+            <div className="container d-flex flex-column align-items-center">
                 <Fade right cascade>
+                    <h1>Tech Stack</h1>
+                    <p className="fs-6 text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div className="skill-grid">
                         <div className="text-center">
                             <img src={HTML} alt='HTML'/>
+                            <p>HTML5</p>
                         </div>
                         <div className="text-center">
                             <img src={CSS} alt='CSS'/>
+                            <p>CSS3</p>
                         </div>
                         <div className="text-center">
                             <img src={JavaScript_Icon} alt='Javascript'/>
+                            <p>Javascript</p>
                         </div>
                         <div className="text-center">
                             <img src={ReactJS_Icon} alt='ReactJS'/>
+                            <p>React JS</p>
                         </div>
                         <div className="text-center">
                             <img src={PHP_Icon} alt='PHP'/>
+                            <p>PHP</p>
                         </div>
                         <div className="text-center">
                             <img src={Python_Icon} alt='Python'/>
+                            <p>Python</p>
                         </div>
                     </div>
                 </Fade>
