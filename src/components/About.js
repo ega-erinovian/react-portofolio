@@ -27,7 +27,7 @@ const About = () => {
                     <ul>
                       <li className='mb-4'><strong>Birth Date:</strong> <span>3 November 2000</span></li>
                       <li className='mb-4'><strong>Phone:</strong> <span>+62 851 5511 4016</span></li>
-                      <li className='mb-4'><strong>City:</strong> <span>Sleman, D.I. Yogyakarta, Indonesia</span></li>
+                      <li className='mb-4'><strong>Address:</strong> <span>Sleman, D.I. Yogyakarta, Indonesia</span></li>
                     </ul>
                   </div>
                   <div class="col-lg-6">
