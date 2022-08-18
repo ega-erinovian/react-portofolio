@@ -1,13 +1,28 @@
 import React from 'react'
 import { portfolioData } from "../portfolioDB";
 import {CaretLeftFill} from "react-bootstrap-icons";
+import LightGallery from 'lightgallery/react';
+
+import Footer from "../components/Footer";
+
+// import styles
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+import lgZoom from 'lightgallery/plugins/zoom';
 
 const PageDetail = () => {
     // Get current URL to get the title of the portfolio
     let currentURL = window.location.href.split("/");
 
+    const onInit = () => {
+        console.log('lightGallery has been initialized');
+    };
+
     return (
-        <div className="page-detail my-5">
+    <>
+        <div className="page-detail mt-5">
             <div className="container">
                 <a className="page-detail-home-btn" href="/"><span><CaretLeftFill/></span> Home</a>
                 <div className="page-detail-heading d-flex justify-content-between align-items-center mt-5">
@@ -28,21 +43,26 @@ const PageDetail = () => {
                 </p>
                 <div className="page-detail-gallery">
                     <h3 className="fw-bold text-center mt-5">Screenshots</h3>
-                    <div className="gallery-grid mt-3">
+                    <div className="gallery-grid mt-3 mb-5">
+                    <LightGallery onInit={onInit} speed={500} plugins={[lgZoom]}>
                         {   // Get image screenshot data with matching url
                             portfolioData && portfolioData.map((data) =>{
-                            if(data.title.replace(/\s/g, "") === currentURL[4]){
-                                return(
-                                    data.img_url.map((img) => <img src={img} alt="screenshot"/>)
-                                )
-                            }else{
-                                return("");
-                            }
-                        })}
+                                if(data.title.replace(/\s/g, "") === currentURL[4]){
+                                    return(
+                                        // data.img_url.map((img) => <img src={img} alt="screenshot"/>)
+                                        data.img_url.map((img) => <img src={img} alt="screenshot"/>)
+                                        )
+                                    }else{
+                                        return("");
+                                    }
+                                })}
+                    </LightGallery>
                     </div>
                 </div>
             </div>
+        <Footer />
         </div>
+    </>
     )
 }
 

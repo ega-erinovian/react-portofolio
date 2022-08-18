@@ -1,5 +1,4 @@
 import React from "react";
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import Fade from "react-reveal/Fade";
 import { portfolioData } from "../portfolioDB";
 

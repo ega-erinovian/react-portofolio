@@ -42,7 +42,6 @@ export const portfolioData = [
         websiteUrl: "https://valoagent.netlify.app",
         img_url: [
             "/assets/img/portfolio_page/Valoagent/1-1.jpg",
-            "/assets/img/portfolio_page/Valoagent/1-2.jpg",
             "/assets/img/portfolio_page/Valoagent/2-1.jpg",
             "/assets/img/portfolio_page/Valoagent/2-2.jpg",
             "/assets/img/portfolio_page/Valoagent/2-3.jpg",

@@ -3,7 +3,6 @@ import Fade from "react-reveal/Fade";
 
 // Import img
 import ProfilePic from "../assets/img/profile-pic.webp";
-import Skill from "./Skill";
 
 const About = () => {
   return (

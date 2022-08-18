@@ -97,4 +97,25 @@
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
   </script>
+
+  <!-- Contact Me Submit -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRWmbxCW9BY5khXR3WelZbAIebGT4T5LwTFqhS7Y29akdXwohop9ms38zZlznFeY9G/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          console.log('Success!', response)
+          alert("Thank you! your message was successfully sent")
+          form.reset();
+        })
+        .catch(error => {
+          console.error('Error!', error.message)
+          alert("Sorry, there was trouble sending your message")
+          form.reset();
+        })
+    })
+  </script>
 </html>
