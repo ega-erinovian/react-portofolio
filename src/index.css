@@ -381,7 +381,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .portfolio-page .portfolio-card{
-  margin-bottom: "1rem"
+  margin-bottom:"1rem";
+}
+
+.portfolio-page .portfolio-card.GPT3 img{
+  filter: brightness(0) opacity(.3);
+  -webkit-filter: brightness(0) opacity(.3);
+}
+
+.portfolio-page .portfolio-card.GPT3 img:hover{
+  filter: brightness(0) opacity(1);
+  -webkit-filter: brightness(0) opacity(1);
 }
 
 /* Contact */

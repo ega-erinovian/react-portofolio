@@ -4,12 +4,6 @@ import { Person, FileEarmark, Envelope, List, Code } from "react-bootstrap-icons
 const Navigasi = () => {
   return (
     <>
-        <i class="mobile-nav-toggle d-xl-none text-primary" onClick={() => {
-            const body = document.querySelector('body')
-            body.classList.toggle('mobile-nav-active')
-        }}>
-        <List />
-        </i>
         <header id="header" class="d-flex flex-column justify-content-center">
             <nav id="navbar" class="navbar nav-menu">
                 <ul>

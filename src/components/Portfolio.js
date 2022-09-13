@@ -1,8 +1,12 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { portfolioData } from "../portfolioDB";
+import { Bookmark, GoldsGym, SismakarRumahweb, Snkrz, SovaLineup, Valoagent, Zikr, GPT3} from "./importsPortfolio";
 
 const Portfolio = () => {
+
+  const img = [Bookmark, GoldsGym, SismakarRumahweb, Snkrz, SovaLineup, Valoagent, Zikr, GPT3]
+
   return (
     <>
       <section id="portfolio" className="portfolio-page py-5 mb-5">
@@ -20,11 +24,12 @@ const Portfolio = () => {
           </Fade>
           <Fade bottom cascade>
             <div className="row justify-content-center align-items-center portfolio-gallery">
-                {portfolioData && portfolioData.map((data) => {
+                {portfolioData && portfolioData.map((data, index) => {
                   return(
-                    <div className="portfolio-card col-lg-3 col-md-6 text-center mb-5">
-                      <a href={"/portfolio/"+data.title.replace(/\s/g, "")}>
-                          <img src={"/assets/img/portfolio/"+data.title.replace(/\s/g, "")+".webp"} alt="golds-gym" />
+                    <div className={"portfolio-card col-lg-3 col-md-6 text-center mb-5" + " " + data.title.replace(/\s/g, "")}>
+                      <a href={"/portfolio/"+data.title.replace(/\s/g, "")} key={index}>
+                          {/* <img src={"/assets/img/portfolio/"+data.title.replace(/\s/g, "")+".webp"} alt="golds-gym" /> */}
+                          <img src={img[index]} alt="golds-gym" />
                       </a>
                     </div>
                   )

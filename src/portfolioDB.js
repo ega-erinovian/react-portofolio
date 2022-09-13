@@ -83,4 +83,13 @@ export const portfolioData = [
             "/assets/img/portfolio_page/SismakarRumahweb/1-6.jpg",
         ]
     },
+    {
+        id: 8,
+        title: "GPT3",
+        desc: "",
+        websiteUrl: "https://gpt3official.netlify.app",
+        img_url: [
+            
+        ]
+    },
 ]
