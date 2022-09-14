@@ -49,8 +49,7 @@ const PageDetail = () => {
                             portfolioData && portfolioData.map((data) =>{
                                 if(data.title.replace(/\s/g, "") === currentURL[4]){
                                     return(
-                                        // data.img_url.map((img) => <img src={img} alt="screenshot"/>)
-                                        data.img_url.map((img) => <img src={img} alt="screenshot"/>)
+                                        data.img_url.map((img) => <img src={img} alt="screenshot" loading='lazy'/>)
                                         )
                                     }else{
                                         return("");

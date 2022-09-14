@@ -19,27 +19,27 @@ const Skill = () => {
                     <p className="fs-6 text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div className="skill-grid">
                         <div className="text-center">
-                            <img src={HTML} alt='HTML'/>
+                            <img src={HTML} alt='HTML' loading='lazy'/>
                             <p>HTML5</p>
                         </div>
                         <div className="text-center">
-                            <img src={CSS} alt='CSS'/>
+                            <img src={CSS} alt='CSS' loading='lazy'/>
                             <p>CSS3</p>
                         </div>
                         <div className="text-center">
-                            <img src={JavaScript_Icon} alt='Javascript'/>
+                            <img src={JavaScript_Icon} alt='Javascript' loading='lazy'/>
                             <p>Javascript</p>
                         </div>
                         <div className="text-center">
-                            <img src={ReactJS_Icon} alt='ReactJS'/>
+                            <img src={ReactJS_Icon} alt='ReactJS' loading='lazy'/>
                             <p>React JS</p>
                         </div>
                         <div className="text-center">
-                            <img src={PHP_Icon} alt='PHP'/>
+                            <img src={PHP_Icon} alt='PHP' loading='lazy'/>
                             <p>PHP</p>
                         </div>
                         <div className="text-center">
-                            <img src={Python_Icon} alt='Python'/>
+                            <img src={Python_Icon} alt='Python' loading='lazy'/>
                             <p>Python</p>
                         </div>
                     </div>

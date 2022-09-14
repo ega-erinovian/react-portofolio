@@ -1,5 +1,5 @@
 import React from 'react'
-import { Person, FileEarmark, Envelope, List, Code } from "react-bootstrap-icons";
+import { Person, FileEarmark, Envelope, Code } from "react-bootstrap-icons";
 
 const Navigasi = () => {
   return (

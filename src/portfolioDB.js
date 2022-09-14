@@ -89,7 +89,11 @@ export const portfolioData = [
         desc: "",
         websiteUrl: "https://gpt3official.netlify.app",
         img_url: [
-            
+            "/assets/img/portfolio_page/GPT3/1-1.webp",
+            "/assets/img/portfolio_page/GPT3/1-2.webp",
+            "/assets/img/portfolio_page/GPT3/1-3.webp",
+            "/assets/img/portfolio_page/GPT3/1-4.webp",
+            "/assets/img/portfolio_page/GPT3/1-5.webp",
         ]
     },
 ]

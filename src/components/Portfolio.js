@@ -5,7 +5,7 @@ import { Bookmark, GoldsGym, SismakarRumahweb, Snkrz, SovaLineup, Valoagent, Zik
 
 const Portfolio = () => {
 
-  const img = [Bookmark, GoldsGym, SismakarRumahweb, Snkrz, SovaLineup, Valoagent, Zikr, GPT3]
+  const img = [GoldsGym, Bookmark, SovaLineup, Valoagent, Zikr, Snkrz, SismakarRumahweb, GPT3]
 
   return (
     <>
@@ -26,10 +26,9 @@ const Portfolio = () => {
             <div className="row justify-content-center align-items-center portfolio-gallery">
                 {portfolioData && portfolioData.map((data, index) => {
                   return(
-                    <div className={"portfolio-card col-lg-3 col-md-6 text-center mb-5" + " " + data.title.replace(/\s/g, "")}>
+                    <div className={'portfolio-card col-lg-3 col-md-6 text-center mb-5 ' + data.title.replace(/\s/g, "")}>
                       <a href={"/portfolio/"+data.title.replace(/\s/g, "")} key={index}>
-                          {/* <img src={"/assets/img/portfolio/"+data.title.replace(/\s/g, "")+".webp"} alt="golds-gym" /> */}
-                          <img src={img[index]} alt="golds-gym" />
+                          <img src={img[index]} alt={data.title} loading="lazy"/>
                       </a>
                     </div>
                   )
